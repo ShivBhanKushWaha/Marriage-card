@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    marker-mid: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     margin:0;
+     width: 100%;
+     height: 1200px;
+}
+.mobile-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    width: 100%;
+    box-shadow: 1px 10px rgba(111, 109, 109,0.2);
+}
+nav{
+    height: 10%;
+    width: 80%;
+}
+.logo{
+    padding-left:100px;
+    margin-top: 10px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 15px;
+}
+
+nav ul li{
+    display:inline-block;
+    vertical-align: baseline;
+    justify-content: space-between;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 18px;
+    padding-left: 50px;
+    text-decoration: none;
+}
+.container{
+    text-align: center;
+    background-image: url(./Background.jpg);
+    height: 450px;
+    border-radius: 80px;
+}
+.container .card{
+    display: flex;
+    justify-content: center;
+    padding: 100px 100px;
+    height: 600px;
+    width: 80%;
+    border-radius: 80px;
+    margin-left: 150px;
+    border: solid 2px black;
+}
+.heading {
+    justify-content: center;
+    padding-top: 35px;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+.heading h3{
+    display: inline-flex;
+    padding-top: 25px;
+}
+.price{
+    display:flex;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+.card-details{
+    height: 80%;
+    width: 50%;
+}
+.card-tittle{
+    padding: 10px 80px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+}
+.price .orgvalue{
+    text-decoration:line-through;
+    font-size: 16px;
+    font-weight: 300;
+}
+.price h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.price h4{
+    color: greenyellow;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-tittle h1{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-tittle .description{
+    text-align: start;
+}
+.card-tittle .btn{
+    background: black;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 35px;
+    margin-top: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.feature h2{
+    margin-top: 60px;
+    font-size: 36px;
+    font-weight: 500;
+}
+.section{
+    display: flex;
+    margin-left: 150px;
+    height: 200px;
+    width: 80%;
+    border: solid 2px black;
+    border-radius: 40px;
+    justify-content:space-evenly;
+}
+.section .desc{
+    padding-top: 25px;
+}
+.section .desc .dot{
+    width: 80px;
+    height: 80px;
+    filter: blur(5px);
+}
+/* slide show */
+
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+    height:400px;
+    width: fit-content;
+}
+#pic{
+    height: 80px;
+    width: fit-content;
+}
+#pic2{
+    height: 20px;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(201, 196, 196);
+  border-radius: 50%;
+  display: inline-block;
+  transition: solid 0.1s linear;
+}
+
+.active, .dot:hover {
+  background-color: #000000;
+  transition: solid 10s linear;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 2}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (min-width:980px) {
+    .menu-icons{
+        display: none;
+    }
+}
+@media only screen and (max-width:980px) {
+    .bar{
+        display: none;
+    }
+    body{
+         height: 1500px;
+    }
+    .mobile-nav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        width: 100%;
+        box-shadow: 1px 10px rgba(111, 109, 109,0.2);
+   }
+
+    .container{
+        text-align: center;
+        background-image: url(./Background.jpg);
+        height: 300px;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .container .card{
+        height: 900px;
+        border-radius: 30px;
+        display: grid;
+        position: relative;
+        margin-left: 40px;
+        margin-right: 40px;
+        border: solid 2px black;
+    }
+    .container .card .card-details{
+        display: grid;
+    }
+    .slideshow-container img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin-left: 32px;
+        height: 400px;
+    }
+    .heading {
+        text-align: center;
+        padding-top: 35px;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 50px;
+    }
+    .heading h3{
+        display: inline-flex;
+        padding-top: 25px;
+    }
+    .card{
+        display: flex;
+        background: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+    }
+    .slider{
+        display: flex;
+        margin-left: 35px;
+        justify-content: center;
+    }
+    .card-details{
+        display: flex;
+        height: 50%;
+        width: 50%;
+    }
+    .price .orgvalue{
+        text-decoration:line-through;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .price h3{
+        font-size: 16px;
+        display: flex;
+        margin-right: 25px;
+        font-weight: 400;
+    }
+    .price h4{
+        color: greenyellow;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .card-tittle{
+        display: inline-block;
+    }
+    .card-tittle h1{
+        font-weight: 300;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .card-tittle .description p{
+        color: darkgray;
+        display: flex;
+        text-align:start;
+        font-size: 12px;
+    }
+    .card-tittle .btn{
+        background: black;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 30px;
+        margin-top: 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .feature h2{
+        margin-top: 40px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .section{
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 220px;
+        width: 80%;
+        border: solid 2px black;
+        border-radius: 30px;
+    }
+}
+@media only screen and (max-width:1080px){
+.mySlides img{
+    height: 400px;
+    width: 250px;
+}
+.card-tittle .btn{
+    background: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-top: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+}

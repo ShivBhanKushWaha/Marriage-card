@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Web version</title>
+</head>
+<body>
+  <div class="menu">
+    <nav class="mobile-nav">
+      <div class="icons">
+        <img class="menu-icons" id="pic2" src="./menu-burger.png" alt="">
+      </div>
+      <img class="logo" id="pic" src="Logo.png" alt="">
+      <ul class="bar">
+        <li><a href="#">Wedding Cards</a></li>
+        <li><a href="#">Birthday Cards</a></li>
+        <li><a href="#">Feeling Cards</a></li>
+        <li><a href="#">Anniversary Cards</a></li>
+        <li><a href="#">Login | Signup</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h3 class="heading">Digitals card details</h3>
+    <div class="card">
+      <div class="card-details" id="slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade ">
+            <img src="./Page1.jpg">
+          </div>
+          <div class="mySlides fade">
+            <img src="./Page2.jpg">
+          </div>
+          <div class="mySlides fade">
+            <img src="./Page3.jpg">
+          </div>
+        </div>
+          <br>
+          <div class="slider">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+      </div>
+      <div class="card-tittle">
+        <h1>Card Title</h1>
+        <div class="price">
+          <h3>$499 <span class="orgvalue">$2000</span></h3>
+          <h4>75%Off</h4>
+        </div>
+        <div class="description">
+          <p>Donec eu ornare mi. Sed finibus
+            condimentum mauris, ut dictum eros
+            maximus vitae. Nullam condimentum tortor ac elit feugiat
+            iaculis. Aenean mauris nisl, blandit</p>
+        </div>
+        <button class="btn">Try this Card</button>
+      </div>
+    </div>
+    <div class="feature">
+      <h2>Features</h2>
+      <div class="section">
+        <div class="desc">
+          <div class="dot"></div>
+          <p>Create your card in just 5 mintues</p>
+        </div>
+        <div class="desc">
+          <div class="dot"></div>
+          <p>Customize the Text
+            with "Edit this Page" Option</p>
+        </div>
+        <div class="desc">
+          <div class="dot"></div>
+          <p>Editing is available after purchase also</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
